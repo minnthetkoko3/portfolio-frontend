@@ -1,3 +1,4 @@
+import Background from "./components/Background";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Section from "./components/Section";
@@ -10,8 +11,10 @@ import Footer from "./components/Footer";
 export default function App() {
   return (
     <div className="min-h-screen text-white/90">
+      <Background />
       <Navbar />
-      <main className="mx-auto max-w-6xl px-4 pb-16">
+
+      <main className="mx-auto max-w-6xl px-4 pb-16 relative">
         <Hero />
 
         <Section id="projects" title="Projects" subtitle="Selected work I’m proud of">

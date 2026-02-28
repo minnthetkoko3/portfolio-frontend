@@ -1,14 +1,60 @@
 @import "tailwindcss";
 
-/* Optional: your dark glass background */
 :root { color-scheme: dark; }
 html, body { height: 100%; }
+
 body {
   margin: 0;
-  background: radial-gradient(1200px 600px at 20% 10%, rgba(59,130,246,0.28), transparent 60%),
-              radial-gradient(900px 500px at 90% 20%, rgba(236,72,153,0.25), transparent 55%),
-              radial-gradient(900px 600px at 50% 90%, rgba(34,197,94,0.20), transparent 55%),
-              #070A12;
+  background: #050712;
   font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial;
+  overflow-x: hidden;
 }
+
 * { scroll-behavior: smooth; }
+
+/* soft noise overlay (no image needed) */
+.noise::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.08;
+  background-image:
+    repeating-linear-gradient(0deg, rgba(255,255,255,.08), rgba(255,255,255,.08) 1px, transparent 1px, transparent 2px);
+  mix-blend-mode: overlay;
+}
+
+/* animated blobs */
+.blob {
+  position: fixed;
+  width: 520px;
+  height: 520px;
+  border-radius: 999px;
+  filter: blur(60px);
+  opacity: .45;
+  transform: translate3d(0,0,0);
+  animation: floaty 12s ease-in-out infinite;
+  pointer-events: none;
+}
+
+.blob.b1 { top: -140px; left: -120px; background: rgba(59,130,246,.55); }
+.blob.b2 { top: 40px; right: -180px; background: rgba(236,72,153,.45); animation-delay: -3s; }
+.blob.b3 { bottom: -220px; left: 20%; background: rgba(34,197,94,.40); animation-delay: -6s; }
+
+@keyframes floaty {
+  0%, 100% { transform: translate(0,0) scale(1); }
+  50% { transform: translate(30px, -20px) scale(1.06); }
+}
+
+/* subtle grid */
+.grid-bg {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  opacity: .22;
+  background-image:
+    linear-gradient(rgba(255,255,255,.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.06) 1px, transparent 1px);
+  background-size: 48px 48px;
+  mask-image: radial-gradient(circle at 50% 20%, black 45%, transparent 75%);
+}
