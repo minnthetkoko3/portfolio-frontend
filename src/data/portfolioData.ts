@@ -53,3 +53,60 @@ export const SKILLS = [
   { group: "Database", items: ["MongoDB", "MySQL"] },
   { group: "Tools", items: ["Git/GitHub", "VS Code", "Postman"] }
 ] as const;
+
+export type EducationItem = {
+  school: string;
+  program: string;
+  period: string;
+  details?: string[];
+};
+
+export const EDUCATION: EducationItem[] = [
+  {
+    school: "NCC Education",
+    program: "Level 4 Diploma (Web/IT)",
+    period: "2024 — 2025",
+    details: ["Focused on web development, databases, and networking."]
+  }
+];
+
+export type CertificateItem = {
+  name: string;
+  issuer: string;
+  date?: string;
+  link?: string; // optional: certificate URL
+};
+
+export const CERTIFICATES: CertificateItem[] = [
+  {
+    name: "Add your certificate name",
+    issuer: "Issuer (e.g., Coursera / Udemy / Google)",
+    date: "2026",
+    link: "#"
+  }
+];
+
+export type LearningItem = {
+  title: string;
+  progress: number; // 0-100
+  notes?: string;
+  evidenceLink?: string; // github repo / notes / project link
+};
+
+export const CURRENTLY_LEARNING: LearningItem[] = [
+  {
+    title: "React + TypeScript",
+    progress: 65,
+    notes: "Building portfolio + components, improving typing and patterns."
+  },
+  {
+    title: "Node/Express API (JWT, validation)",
+    progress: 55,
+    notes: "Building REST APIs with clean structure and error handling."
+  },
+  {
+    title: "MongoDB + Mongoose",
+    progress: 45,
+    notes: "Schemas, relations, queries, and deployment to Atlas."
+  }
+];

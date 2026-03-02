@@ -7,6 +7,9 @@ import Experience from "./components/Experience";
 import Skills from "./components/Skills";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import Education from "./components/Education";
+import Certificates from "./components/Certificates";
+import LearningProgress from "./components/LearningProgress";
 
 export default function App() {
   return (
@@ -32,6 +35,18 @@ export default function App() {
         <Section id="contact" title="Contact" subtitle="Let’s build something together">
           <Contact />
         </Section>
+
+        <Section id="education" title="Education" subtitle="My academic background">
+  <Education />
+</Section>
+
+<Section id="certificates" title="Certificates" subtitle="Courses & achievements">
+  <Certificates />
+</Section>
+
+<Section id="learning" title="Currently Learning" subtitle="Tracking my progress">
+  <LearningProgress />
+</Section>
 
         <Footer />
       </main>
