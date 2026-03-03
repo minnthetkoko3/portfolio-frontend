@@ -32,21 +32,21 @@ export default function App() {
           <Skills />
         </Section>
 
-        <Section id="contact" title="Contact" subtitle="Let’s build something together">
-          <Contact />
+        <Section id="learning" title="Currently Learning" subtitle="Tracking my progress">
+          <LearningProgress />
         </Section>
 
         <Section id="education" title="Education" subtitle="My academic background">
-  <Education />
-</Section>
+          <Education />
+        </Section>
 
-<Section id="certificates" title="Certificates" subtitle="Courses & achievements">
-  <Certificates />
-</Section>
+        <Section id="certificates" title="Certificates" subtitle="Courses & achievements">
+          <Certificates />
+        </Section>
 
-<Section id="learning" title="Currently Learning" subtitle="Tracking my progress">
-  <LearningProgress />
-</Section>
+        <Section id="contact" title="Contact" subtitle="Let’s build something together">
+          <Contact />
+        </Section>
 
         <Footer />
       </main>

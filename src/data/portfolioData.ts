@@ -1,17 +1,17 @@
 export const PROFILE = {
-  name: "Web",
-  title: "MERN Stack Developer",
-  location: "Singapore",
+  name: "Matthew",
+  title: "Full Stack Developer",
+  location: "Based in Singapore",
   bio:
     "I build modern full-stack apps with clean UI, solid APIs, and real-world features. I enjoy React, TypeScript, and backend work.",
-  avatar: "/profile.jpg", // put image in public/ or set to "" to hide
-  resumeUrl: "/resume.pdf" // put resume.pdf in public/
+  avatar: "/profile.jpg", 
+  resumeUrl: "/resume.pdf" 
 };
 
 export const SOCIALS = [
-  { label: "GitHub", href: "https://github.com/your-username" },
+  { label: "GitHub", href: "https://github.com/minnthetkoko3" },
   { label: "LinkedIn", href: "https://www.linkedin.com/in/your-profile" },
-  { label: "Email", href: "mailto:you@example.com" }
+  { label: "Email", href: "minnthetkoko@gmail.com" }
 ] as const;
 
 export type Project = {
@@ -95,18 +95,20 @@ export type LearningItem = {
 
 export const CURRENTLY_LEARNING: LearningItem[] = [
   {
-    title: "React + TypeScript",
-    progress: 65,
-    notes: "Building portfolio + components, improving typing and patterns."
-  },
-  {
     title: "Node/Express API (JWT, validation)",
-    progress: 55,
+    progress: 90,
     notes: "Building REST APIs with clean structure and error handling."
   },
+  
   {
-    title: "MongoDB + Mongoose",
-    progress: 45,
-    notes: "Schemas, relations, queries, and deployment to Atlas."
+    title: "Frontend Dev + UI/UX",
+    progress: 65,
+    notes: "React, Tailwind, and Figma."
+  },
+  
+  {
+    title: "Database",
+    progress: 70,
+    notes: "Mongodb, MySQL, PosgreSQL, data modeling, and queries."
   }
 ];
