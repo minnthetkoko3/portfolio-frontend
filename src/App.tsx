@@ -3,13 +3,15 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Section from "./components/Section";
 import Projects from "./components/Projects";
-import Experience from "./components/Experience";
+import About from "./components/About";
+import LearningLog from "./components/LearningLog";
+// import Experience from "./components/Experience";
+import Certificates from "./components/Certificates";
 import Skills from "./components/Skills";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-import Education from "./components/Education";
-import Certificates from "./components/Certificates";
-import LearningProgress from "./components/LearningProgress";
+import AboutSection from "./components/Experience";
+//import StartHero from "./components/StartHero";
 
 export default function App() {
   return (
@@ -20,28 +22,34 @@ export default function App() {
       <main className="mx-auto max-w-6xl px-4 pb-16 relative">
         <Hero />
 
+        {/* StartHero /> */}
+
+        <Section id="about" title="About Me" subtitle="Professional summary & what I do best">
+          <About />
+        </Section>
+
+        <Section id="about-section" title="Experience" subtitle="More about me">
+          <AboutSection />
+        </Section>
+
         <Section id="projects" title="Projects" subtitle="Selected work I’m proud of">
           <Projects />
         </Section>
 
-        <Section id="experience" title="Experience" subtitle="What I’ve worked on">
+        <Section id="learning" title="Learning Log" subtitle="What I’m improving right now">
+          <LearningLog />
+        </Section>
+
+        {/* <Section id="experience" title="Experience" subtitle="Where I’ve worked and what I did">
           <Experience />
+        </Section> */}
+
+        <Section id="certificates" title="Certificates" subtitle="My achievements and qualifications">
+          <Certificates />
         </Section>
 
         <Section id="skills" title="Skills" subtitle="Tech I use and enjoy">
           <Skills />
-        </Section>
-
-        <Section id="learning" title="Currently Learning" subtitle="Tracking my progress">
-          <LearningProgress />
-        </Section>
-
-        <Section id="education" title="Education" subtitle="My academic background">
-          <Education />
-        </Section>
-
-        <Section id="certificates" title="Certificates" subtitle="Courses & achievements">
-          <Certificates />
         </Section>
 
         <Section id="contact" title="Contact" subtitle="Let’s build something together">

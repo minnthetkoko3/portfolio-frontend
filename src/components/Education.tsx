@@ -31,5 +31,6 @@ export default function Education() {
         </motion.div>
       ))}
     </div>
-  );
+ 
+);
 }
