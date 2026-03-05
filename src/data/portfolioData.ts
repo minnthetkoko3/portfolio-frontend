@@ -2,7 +2,7 @@
 
 export const PROFILE = {
   name: "Minn Thet Ko Ko (Matthew)",
-  title: "IT Support Specialist • Backend Developer",
+  title: "IT Support Specialist • Full Stack Developer",
   location: "Bishan, Singapore",
   bio:
     "IT Support Specialist with 3+ years of experience in system administration, troubleshooting, and backend development. Skilled in Windows/Linux environments, VPS/cloud management, and building Node.js/Express services with TypeScript  . I focus on reliable systems, secure operations, and clean, maintainable code.",
@@ -12,6 +12,7 @@ export const PROFILE = {
 
 export const ABOUT_KEYS = [
   "Back-end: Node.js, Express, TypeScript",
+  "Front-end: React, TypeScript",
   "Database: MongoDB / MySQL",
   "IT Support: troubleshooting, networking basics",
   "Tools: GitHub, Postman, VS Code"
