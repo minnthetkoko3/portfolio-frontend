@@ -45,26 +45,69 @@ export type Project = {
 
 export const PROJECTS: Project[] = [
   {
-    title: "Supermarket / Order Management (Django + SQLite)",
+    title: "Exposure Wedding Studio",
     desc:
-      "Order creation with multiple items, totals calculation, reports by date range, and admin-style product/customer management.",
-    tags: ["Django", "SQLite", "CRUD", "Reports"],
-    link: "https://github.com/minnthetkoko3" // replace with your repo link if you have it
+      "Wedding Studio Website built with ",
+    tags: ["Python", "Flask", "HTML", "CSS"],
+    link: "https://exposure-projects.vercel.app/" // replace with exact repo URL
   },
   {
-    title: "Node.js API (Auth + Clean Structure)",
+    title: "Exposure Wedding Studio (Package Price List)",
     desc:
-      "Backend REST API built with Express + TypeScript, focusing on validation, JWT auth, error handling, and clean folder structure.",
-    tags: ["Node.js", "Express", "TypeScript", "JWT"],
-    link: "https://github.com/minnthetkoko3" // replace with exact repo URL
+      "Simple web app for a wedding studio to manage and display their package prices, built with Django and SQLite. Features CRUD operations and report generation.",
+    tags: ["React", "TypeScript", "CRUD", "Reports"],
+    link: "https://exposureweddingservices.vercel.app/" // replace with your repo link if you have it
+  },
+  {
+    title: "Subscription Tracker API",
+    desc:
+      "A RESTful API for managing user subscriptions, built with Node.js, Express, and MongoDB. Supports user authentication, subscription CRUD operations, and JWT-based security.",
+    tags: ["Node.js", "Express", "MongoDB", "JWT"],
+    link: "https://github.com/minnthetkoko3/subscription-tracker" // replace with exact repo URL
   },
   {
     title: "Portfolio (Glass UI + Contact API)",
     desc:
       "Dark glassmorphism portfolio with smooth animation, contact form integration, and downloadable resume.",
     tags: ["React", "Tailwind v4", "Framer Motion", "TypeScript"],
-    link: "https://github.com/minnthetkoko3" // replace with deployed link or repo
-  }
+    link: "https://portfolio-frontend-puce-sigma.vercel.app/" // replace with deployed link or repo
+  },
+  {
+    title: "Portfolio Backend (Contact Form API)",
+    desc:
+      "Backend API for handling contact form submissions in the portfolio website.",
+    tags: ["Node.js", "Express", "TypeScript", "Email Integration"],
+    link: "https://github.com/minnthetkoko3/portfolio-backend" // replace with exact repo URL
+  },
+  {
+    title: "Shwe Vision TV House (Product Showcase)",
+    desc:
+      "This Project Build for APU(Asia Pacific University of Technology & Innovation) Assignment - A product showcase website for a TV retailer, built with Python Flask and Html/CSS. Displays product information and contact details.",
+    tags: ["Python", "Flask", "HTML", "CSS"],
+    link: "https://tv-sale.vercel.app/" // replace with exact repo URL
+  },
+  {
+    title: "Auth Application API",
+    desc:
+      "A secure authentication API built with Node.js, Express, and MongoDB. Supports user registration, login, and JWT-based authentication.",
+    tags: ["Node.js", "Express", "MongoDB", "JWT"],
+    link: "https://github.com/minnthetkoko3/Auth-App-Typescript" // replace with exact repo URL
+  },
+  {
+    title: "Blog Application API with Node.js and Express, Rest API",
+    desc:
+      "A simple blog application API built with Node.js and Express. Supports CRUD operations for blog posts and user management.",
+    tags: ["Node.js", "Express", "REST API"],
+    link: "https://github.com/minnthetkoko3/Blog-Appi" // replace with exact repo URL
+  },
+  {
+    title: "Alpha Marketing--Portfolio Website",
+    desc:
+      "JavaScript, Nextjs, React Based Portfolio Website for Alpha Marketing Agency. Showcases company services, team, and contact information with a modern design.",
+    tags: ["JavaScript", "Next.js", "React", "Tailwind CSS"],
+    link: ""
+  },
+
 ];
 
 export type ExperienceItem = {
@@ -124,7 +167,7 @@ export const EXPERIENCE: ExperienceItem[] = [
     ]
   },
   {
-    role: "Information Technology Support Assistant / Data Entry",
+    role: "IT Support Assistant / Data Entry",
     company: "Alpha Marketing Agency",
     location: "Yangon, Myanmar",
     type: "Internship",
