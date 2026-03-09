@@ -182,7 +182,7 @@ export const EXPERIENCE: ExperienceItem[] = [
 export const SKILLS = [
   {
     group: "Backend Development",
-    items: ["Node.js", "Express.js", "TypeScript", "REST API", "Debugging", "JWT (Learning/Using)"]
+    items: ["Node.js", "Express.js", "TypeScript", "REST API", "Debugging", "JWT"]
   },
   {
     group: "System Administration",
@@ -203,6 +203,10 @@ export const SKILLS = [
   {
     group: "Soft Skills",
     items: ["Problem Solving", "Communication", "Teamwork", "Time Management", "Reliability"]
+  }, 
+  {
+    group: "AI",
+    items: ["Google AI Studio","Claude Code", "Chat GPT CODEX",]
   }
 ] as const;
 
@@ -258,7 +262,7 @@ export const CURRENTLY_LEARNING: LearningItem[] = [
     title: "Node/Express API (JWT, validation, clean architecture)",
     progress: 90,
     notes: "Building REST APIs with good structure, validation, and error handling.",
-    evidenceLink: "https://github.com/minnthetkoko3"
+    //evidenceLink: "https://github.com/minnthetkoko3"
   },
   {
     title: "Frontend Dev + UI/UX (React + Tailwind)",
@@ -269,5 +273,10 @@ export const CURRENTLY_LEARNING: LearningItem[] = [
     title: "Database (MongoDB/MySQL/PostgreSQL)",
     progress: 70,
     notes: "Data modeling, query performance, and practical schema design."
-  }
+  },
+  { title: "Cloud Computing (AWS/GCP Fundamentals)",
+    progress: 30,
+    notes: "AWS, GCP basics, services overview, and practical deployment experience."
+  },
+  
 ];
